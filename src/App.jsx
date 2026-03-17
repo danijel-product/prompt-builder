@@ -17,7 +17,7 @@ function App() {
 
   const handleSubmit = async () => {
 
-    const res = await fetch("http://localhost:5000/api/ask", {
+    const res = await fetch("/api/ask", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
