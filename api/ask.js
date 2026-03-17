@@ -11,7 +11,7 @@ export default async function handler(req, res) {
         body = JSON.parse(req.body);
     }
     try {
-    const { input, context, role, task, format } = req.body;
+    const { input, context, role, task, format } = body;
 
     let prompt
 
