@@ -5,8 +5,13 @@ const groq = new Groq({
 });
 
 export default async function handler(req, res) {
+
+    let body = req.body;
+    if (typeof req.body === 'string') {
+        body = JSON.parse(req.body);
+    }
     try {
-  const { input, context, role, task, format } = req.body;
+    const { input, context, role, task, format } = req.body;
 
     let prompt
 
