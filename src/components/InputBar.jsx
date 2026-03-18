@@ -1,6 +1,5 @@
 import plusIcon from '../assets/Plus-button.png'
 import voiceIcon from '../assets/mingcute_voice-line.png'
-import './InputBar.css'
 
 
 function InputBar({style, value, onChange, onSubmit}) { 
@@ -8,12 +7,10 @@ function InputBar({style, value, onChange, onSubmit}) {
     container: {
       backgroundColor: "#303030",
       width: "758px",
-      maxWidth: "calc(100% - 0px)",
       height: "50px",
       display: "flex",
       alignItems: "center",
       borderRadius: "24px",
-      boxSizing: "border-box"
     },
     input: {
       flex: 1,
@@ -57,7 +54,7 @@ function InputBar({style, value, onChange, onSubmit}) {
   };
 
   return (
-    <div style={{...styles.container,...style}} className="input-bar-container">
+    <div style={{...styles.container,...style}}>
       <button style={styles.leftButton}>
         <img src={plusIcon} style={styles.icon} />
       </button>

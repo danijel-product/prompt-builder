@@ -1,5 +1,4 @@
 import { useState } from "react";
-import './ToggleButton.css'
 
 function ToggleButton({onClick}) {
   const [type, setType] = useState("Standard");
@@ -12,7 +11,6 @@ function ToggleButton({onClick}) {
   return (
     <button
       onClick={handleClick}
-      className="toggle-button"
       style={{
         backgroundColor: "#303030",
         width: "152px",
@@ -22,8 +20,7 @@ function ToggleButton({onClick}) {
         border: "none",
         padding: "12px 16px",
         borderRadius: "24px",
-        cursor: "pointer",
-        whiteSpace: "nowrap"
+        cursor: "pointer"
       }}
     >
       {type}

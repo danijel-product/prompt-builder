@@ -71,7 +71,6 @@ function App() {
     bottomRow: {      
       gap: "64px",  
       display: 'flex',
-      flexDirection: 'row',
       alignItems: 'flex-end',
       justifyContent: 'center',
       marginBottom: '50px',
