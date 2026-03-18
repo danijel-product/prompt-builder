@@ -1,0 +1,79 @@
+/* AdvanceInput responsive styles */
+
+.advance-input-container {
+  width: 758px;
+  min-width: 200px;
+}
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .advance-input-container {
+    width: 100%;
+    max-width: 400px;
+    min-height: auto;
+    padding: 10px !important;
+  }
+
+  .advance-input-container label {
+    font-size: 16px !important;
+  }
+
+  .advance-input-container input {
+    font-size: 13px !important;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .advance-input-container {
+    width: 100%;
+    max-width: 100%;
+    min-height: auto;
+    padding: 8px !important;
+  }
+
+  .advance-input-container label {
+    font-size: 14px !important;
+    margin-bottom: 4px !important;
+  }
+
+  .advance-input-container input {
+    font-size: 12px !important;
+  }
+
+  .advance-input-container > div {
+    margin-bottom: 12px !important;
+  }
+
+  /* LastGroup flexbox adjustment for mobile */
+  .advance-input-container > div:last-child {
+    flex-direction: column;
+    gap: 12px !important;
+  }
+
+  .advance-input-container button {
+    width: 28px !important;
+    height: 28px !important;
+  }
+}
+
+/* Extra small mobile (360px and below) */
+@media (max-width: 360px) {
+  .advance-input-container {
+    width: 100%;
+    padding: 6px !important;
+  }
+
+  .advance-input-container label {
+    font-size: 12px !important;
+  }
+
+  .advance-input-container input {
+    font-size: 11px !important;
+  }
+
+  .advance-input-container button {
+    width: 24px !important;
+    height: 24px !important;
+  }
+}

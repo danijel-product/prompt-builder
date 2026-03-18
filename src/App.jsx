@@ -4,6 +4,7 @@ import InputBar from './components/InputBar'
 import './App.css'
 import AdvanceInput from './components/AdvanceInput'
 import Answers from './components/Answers'
+import {Analytics} from '@vercel/analytics/react';
 
 function App() {
   const [isAdvance, setIsAdvance] = useState(false);
@@ -70,6 +71,7 @@ function App() {
     bottomRow: {      
       gap: "64px",  
       display: 'flex',
+      flexDirection: 'row',
       alignItems: 'flex-end',
       justifyContent: 'center',
       marginBottom: '50px',
@@ -88,6 +90,8 @@ function App() {
   };
 
   return (
+    <>
+      <Analytics />
     <div style={styles.container}>
       <div style={styles.scrollArea}>
      {answers.map((text,index) => (
@@ -113,6 +117,7 @@ function App() {
         <ToggleButton onClick={() => setIsAdvance(!isAdvance)} />
       </div>
     </div>
+    </>
   );
 }
 

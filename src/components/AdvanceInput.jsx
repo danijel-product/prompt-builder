@@ -1,5 +1,6 @@
 import InputBar from "./InputBar";
 import arrowIcon from '../assets/up-arrow.png'
+import './AdvanceInput.css'
 
 function AdvanceInput({context, setContext, 
   role, setRole, 
@@ -9,7 +10,9 @@ function AdvanceInput({context, setContext,
   const styles = {
     container: {
       width: "758px",
-      height: "416px",
+      maxWidth: "calc(100% - 0px)",
+      height: "auto",
+      minHeight: "416px",
       backgroundColor: "#181818",
       padding: "12px",
       display: "flex",
@@ -50,7 +53,7 @@ function AdvanceInput({context, setContext,
   };
 
   return (
-    <div style={styles.container}>
+    <div style={styles.container} className="advance-input-container">
       
       <div style={styles.group}>
         <label style={styles.label}>Context</label>
